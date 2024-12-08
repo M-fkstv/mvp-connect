@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8px;
+  border-bottom: 1px solid var(--general-white);
+  color: var(--general-white);
+
+  & .header__logo {
+    font-size: 1.5rem;
+  }
+
+  & .header__nav {
+    width: 30%;
+    & ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      padding-left: 0;
+      & li {
+        & a {
+          font-size: 1.5rem;
+          &:hover {
+            color: #0000ff;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+          }
+        }
+      }
+    }
+  }
+}

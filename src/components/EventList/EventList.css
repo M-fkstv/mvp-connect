@@ -1,0 +1,24 @@
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  color: var(--general-white);
+
+  & p {
+    font-size: 20px;
+  }
+
+  & :is(.event-list__teams, .event-list__date, .event-list__bets) {
+    flex: 1 1 33%;
+  }
+
+  & .event-list__bets {
+    display: flex;
+
+    & p {
+      flex: 1 1 33%;
+      text-align: start;
+    }
+  }
+}
